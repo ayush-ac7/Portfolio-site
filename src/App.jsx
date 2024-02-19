@@ -1,11 +1,13 @@
-import {Homepage} from "./components/Homepage"
-import {About} from "./components/About"
+// import {Homepage} from "./components/Homepage"
+// import {About} from "./components/About"
+import Navbar from "./components/navbar"
 
 function App() {
   return (
     <div>
-      {/* <Homepage></Homepage> */}
-      <About></About>
+     {/* <Homepage/>
+     <About/> */}
+     <Navbar/>
     </div>
   )
 }
