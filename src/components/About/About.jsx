@@ -13,7 +13,6 @@ export default function About() {
                 <div className="skillBar">
                     <img src="" alt="" className="skillBarImg" />
                     <div className="skillBarText">
-                        {/* <h2>Website design</h2> */}
                         <p>
                         "Crafting Digital Experiences, One Pixel at a Time." 
                         </p>
