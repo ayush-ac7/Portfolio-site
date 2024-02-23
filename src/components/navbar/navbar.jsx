@@ -6,11 +6,11 @@ import menu from "../../assets/menu.png";
 import { useState } from "react";
 
 export default function Navbar() {
-      let [showMenu, setShowMenu] = useState(false);
+      const [showMenu, setShowMenu] = useState(false);
 
-       const showMenuBtn = () => {
-          setShowMenu(false);
-      }
+      //  const showMenuBtn = () => {
+      //     setShowMenu(false);
+      //  }
 
       return (
         <nav className= "navbar">
@@ -18,7 +18,7 @@ export default function Navbar() {
             <div className="desktopMenu">
                 <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Home</Link>
                 <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem">About</Link>
-                <Link className="desktopMenuListItem">Skills</Link>
+                {/* <Link className="desktopMenuListItem">Skills</Link> */}
                 <Link activeClass="active" to="works" spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem">Portfolio</Link>
             </div>
             <button className="desktopMenuBtn" onClick={() => {
@@ -28,12 +28,12 @@ export default function Navbar() {
 
             
                  <img src={menu} alt="Menu" className="mobMenu" onClick={() => setShowMenu(!showMenu)}/>
-            <div className="navMenu" style={{display: showMenu? "flex" :"none"}}>
-                <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={showMenuBtn}>Home</Link>
-                <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={showMenuBtn}>About</Link>
-                <Link className="desktopMenuListItem" onClick={showMenuBtn}>Skills</Link>
-                <Link activeClass="active" to="works" spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={showMenuBtn}>Portfolio</Link>
-                <Link activeClass="active" to="contactPage" spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={showMenuBtn}>Contact</Link>
+            <div className="navMenu" style={{display: showMenu? "flex" : "none"}}>
+                <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={() => setShowMenu(false)}>Home</Link>
+                <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={() => setShowMenu(false)}>About</Link>
+                {/* <Link className="desktopMenuListItem" onClick={() => setShowMenu(false)}>Skills</Link> */}
+                <Link activeClass="active" to="works" spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={() => setShowMenu(false)}>Portfolio</Link>
+                <Link activeClass="active" to="contactPage" spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={() => setShowMenu(false)}>Contact</Link>
             </div>
         </nav>
       )
