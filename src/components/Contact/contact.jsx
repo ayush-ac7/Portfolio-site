@@ -14,8 +14,14 @@ export default function Contact() {
                     <textarea className="msg" name="message" rows="5" placeholder="Your Message"></textarea>
                     <button type="submit" value= "Send" className="submitBtn">Submit</button>
                     <div className="links">
-                        <img src= {linkedInIcon} alt="LinkedIn" className="link" />
-                        <img src= {githubIcon} alt="Github" className="link" />
+                        <a
+                           href="https://www.linkedin.com/in/ayush-chauhan-ac7">
+                          <img src= {linkedInIcon} alt="LinkedIn"  className="link" />
+                        </a>
+                        <a href="https://github.com/ayush-ac7">
+                          <img src= {githubIcon} alt="Github" className="link" />
+                        </a>
+                        
                     </div>
 
 
