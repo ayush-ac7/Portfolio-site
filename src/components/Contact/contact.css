@@ -29,6 +29,7 @@
     justify-content: center;
     width: 90vw;
     max-height: 60rem;
+    margin-bottom: 1rem;
 }
 
 .name, .email, .msg {
@@ -60,8 +61,7 @@
     object-fit: cover;
     height: 3rem;
     width: 3rem;
-    margin: 0 0.50rem;
-    
+    margin: 1rem 0.50rem;
 }
 
 .link:hover {

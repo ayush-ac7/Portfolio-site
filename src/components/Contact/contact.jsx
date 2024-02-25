@@ -1,6 +1,7 @@
 import "./contact.css";
 import githubIcon from "../../assets/github-icon.png";
 import linkedInIcon from "../../assets/linkedin-icon.png";
+import Button from '@mui/material/Button';
 
 export default function Contact() {
     return (
@@ -12,7 +13,8 @@ export default function Contact() {
                     <input type="text" className="name" placeholder="Your Name" />
                     <input type="email" className="email" placeholder="Your Email" />
                     <textarea className="msg" name="message" rows="5" placeholder="Your Message"></textarea>
-                    <button type="submit" value= "Send" className="submitBtn">Submit</button>
+                    <Button variant="contained" size="large" type="submit" value= "Send" className="submitBtn">Submit</Button>
+                    {/* <button type="submit" value= "Send" className="submitBtn">Submit</button> */}
                     <div className="links">
                         <a
                            href="https://www.linkedin.com/in/ayush-chauhan-ac7">
