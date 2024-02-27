@@ -18,7 +18,6 @@ export default function Navbar() {
             <div className="desktopMenu">
                 <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Home</Link>
                 <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem">About</Link>
-                {/* <Link className="desktopMenuListItem">Skills</Link> */}
                 <Link activeClass="active" to="works" spy={true} smooth={true} offset={-50} duration={500} className="desktopMenuListItem">Portfolio</Link>
             </div>
             <button className="desktopMenuBtn" onClick={() => {
@@ -31,7 +30,6 @@ export default function Navbar() {
             <div className="navMenu" style={{display: showMenu? "flex" : "none"}}>
                 <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={() => setShowMenu(false)}>Home</Link>
                 <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={() => setShowMenu(false)}>About</Link>
-                {/* <Link className="desktopMenuListItem" onClick={() => setShowMenu(false)}>Skills</Link> */}
                 <Link activeClass="active" to="works" spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={() => setShowMenu(false)}>Portfolio</Link>
                 <Link activeClass="active" to="contactPage" spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={() => setShowMenu(false)}>Contact</Link>
             </div>
