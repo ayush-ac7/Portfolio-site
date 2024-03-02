@@ -35,13 +35,18 @@
 @media screen and (max-width:705px) {
     .bg {
       height: 40vh;
+      top: -5vw;
       right: 5vw;
+      left: 5vw;
     }
 
     .introContent {
-       margin-top: 6rem;
+       margin-top: 7rem;
+       max-width: 100vw;
+       margin-left: 1rem;
     }
 }
+
 
 .hello {
     font-size: 1.75rem;
