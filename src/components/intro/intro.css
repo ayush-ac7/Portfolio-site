@@ -93,3 +93,14 @@
     margin-left: 20px;
 }
 
+@media screen and (max-width:500px) {
+    .logos {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .icon {
+        height: 1.5rem;
+        width: 2rem;
+    }
+}
+
