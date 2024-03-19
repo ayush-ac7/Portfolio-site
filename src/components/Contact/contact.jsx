@@ -14,7 +14,6 @@ export default function Contact() {
                     <input type="email" className="email" placeholder="Your Email" />
                     <textarea className="msg" name="message" rows="5" placeholder="Your Message"></textarea>
                     <Button variant="contained" size="large" type="submit" value= "Send" className="submitBtn">Submit</Button>
-                    {/* <button type="submit" value= "Send" className="submitBtn">Submit</button> */}
                     <div className="links">
                         <a
                            href="https://www.linkedin.com/in/ayush-chauhan-ac7">
