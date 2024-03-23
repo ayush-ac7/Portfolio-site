@@ -1,5 +1,3 @@
-// import {Homepage} from "./components/Homepage"
-// import {About} from "./components/About"
 import Navbar from "./components/navbar/navbar";
 import Intro from "./components/intro/intro"
 import About from "./components/About/About";
@@ -10,8 +8,6 @@ import Footer from "./components/Footer/footer";
 function App() {
   return (
     <div>
-     {/* <Homepage/>
-     <About/> */}
      <Navbar/>
      <Intro/>
      <About/>
