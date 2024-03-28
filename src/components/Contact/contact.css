@@ -62,8 +62,9 @@
     height: 3rem;
     width: 3rem;
     margin: 1rem 0.50rem;
+    
 }
 
 .link:hover {
-    height: 3.5rem;
+     height: 2.5rem;
 }
