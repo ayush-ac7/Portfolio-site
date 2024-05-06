@@ -30,6 +30,7 @@
     background-size: cover;
     width: 100%;
     border-radius: 10px;
+    cursor: pointer;
 }
 .proj-img:hover {
     opacity: 0.7;

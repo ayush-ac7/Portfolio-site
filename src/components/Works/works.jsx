@@ -1,6 +1,6 @@
 import './works.css';
 import project1 from "../../assets/univ-homepage.png"
-import project2 from "../../assets/project2.png"
+import project2 from "../../assets/zwigato.png"
 import Button from '@mui/material/Button';
 
 export default function Works() {
@@ -16,7 +16,7 @@ export default function Works() {
               </div>
               <div className="project">
               <img src={project2} alt="" className="proj-img" />
-                <a className='proj-btn' href="https://spotify-clone-omega-five.vercel.app/">
+                <a className='proj-btn' href="https://zwigato-app-opal.vercel.app/">
                 <Button variant="contained" size="large" type="submit" value= "Send">Live Demo</Button>
                 </a>
               </div>
